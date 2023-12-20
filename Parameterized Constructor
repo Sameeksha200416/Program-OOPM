@@ -1,0 +1,28 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+class Wall {
+  private:
+    int length;
+    int height;
+
+  public:
+    Wall(int len, int hgt) {
+      length = len;
+      height = hgt;
+    }
+
+    int calculateArea() {
+      return length * height;
+    }
+};
+
+int main() {
+  Wall wall1(22, 44);
+  Wall wall2(6, 8);
+
+  cout << "Area of Wall 1: " << wall1.calculateArea() << endl;
+  cout << "Area of Wall 2: " << wall2.calculateArea();
+
+  return 0;
+}
