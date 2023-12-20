@@ -1,0 +1,38 @@
+// defining the constructor outside the class
+
+#include <iostream>
+using namespace std;
+class student {
+    char name[50];
+    int rno;
+    double fee;
+
+public:
+    student();
+    void display();
+};
+
+student::student()
+{
+    cout << "Enter the Name:";
+    cin >> name;
+    
+    cout << "Enter the RollNo:";
+    cin >> rno;
+
+    cout << "Enter the Fee:";
+    cin >> fee;
+}
+
+void student::display()
+{
+    cout << endl << name << "\t" << rno << "\t" << fee;
+}
+
+int main()
+{
+    student s;
+    s.display();
+
+    return 0;
+}
